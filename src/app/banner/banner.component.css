@@ -1,0 +1,46 @@
+
+.container-fluid .no-padding {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#toolbar {
+    background-color: lightgray;
+    height: 100px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.virtical-centered-div {
+    display: flex;
+    align-items: center;
+}
+
+.toolbar-icon {
+    border: 0;
+    border-radius: 15px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    height: 90px;
+}
+
+/* #search-box, #search-btn {
+    border: 0;
+    padding: 0;
+} */
+
+#test {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.vertical-centerx {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }

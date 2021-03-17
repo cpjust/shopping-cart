@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Bootstrap size breakpoints:
+| Breakpoint | Class infix | Dimensions |
+| ---------- | ----------- | ---------- |
+| X-Small    | None        | <576px     |
+| Small      | sm          | ≥576px     |
+| Medium     | md          | ≥768px     |
+| Large      | lg          | ≥992px     |
+| X Large    | xl          | ≥1200px    |
+| XX Large   | xxl         | ≥1400px    |
+
+
