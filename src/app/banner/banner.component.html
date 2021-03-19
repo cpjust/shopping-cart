@@ -1,32 +1,29 @@
 <div class="container-fluid">
     <!-- Toolbar -->
-    <div class="row align-items-center" role="banner" id="toolbar">
+    <nav class="navbar p-0 m-0 fixed-top navbar-light row align-items-center" role="banner" id="toolbar">
         <!-- Home button -->
-        <div class="col-sm-2 col-md-2 d-none d-sm-block">
-            <a href="/index.html">
+        <div class="nav-item col-sm-2 col-md-2 d-none d-sm-block">
+            <a class="nav-link" href="/index.html">
                 <img class="img-fluid toolbar-icon" alt="My Shop Home" src="../assets/home-button.png" id="home-button" />
             </a>
         </div>
 
         <!-- Search bar -->
-        <div class="row col-8 col-sm-7 col-md-8">
-            <div class="input-group">
+        <div class="nav-item row col-8 col-sm-7 col-md-8">
+            <form class="input-group">
                 <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
                     aria-describedby="search-addon" />
                 <button type="button" class="btn btn-outline-primary">search</button>
-            </div>
+            </form>
         </div>
 
-        <div class=" no-padding text-right ml-auto col-4 col-sm-3 col-md-2 row">
-            <div class="virtical-centered-div col-4">
-                <button type="button" class="btn btn-primary btn-sm">Login</button>
-            </div>
+        <div class="nav-item text-right ml-auto col-4 col-sm-3 col-md-2 row">
             <!-- Login/Profile button -->
-            <!-- <div class="col-4">
+            <div class="virtical-centered-div col-4">
                 <a href="/login">
-                    <img class="img-fluid toolbar-icon" alt="Login" src="../assets/login-icon.png" id="login-button" />
+                    <button type="button" class="btn btn-primary btn-sm">Login</button>
                 </a>
-            </div> -->
+            </div>
 
             <!-- Shopping Cart button -->
             <div class="col-8">
@@ -35,7 +32,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </nav>
 
     <!-- Display the current column breakpoint. -->
     <div class="row" style="padding: 100px;">
