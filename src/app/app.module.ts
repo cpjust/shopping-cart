@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
+import { BreakpointsComponent } from './breakpoints/breakpoints.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BannerComponent
+    BannerComponent,
+    BreakpointsComponent
   ],
   imports: [
     BrowserModule
