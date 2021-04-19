@@ -1,5 +1,6 @@
 <!-- Toolbar -->
-<nav class="navbar p-0 m-0 fixed-top navbar-light row align-items-center" role="banner" id="toolbar">
+<!-- <nav class="navbar p-0 m-0 fixed-top navbar-light row align-items-center" role="banner" id="toolbar"> -->
+<nav class="navbar navbar-light row align-items-center" role="banner" id="toolbar">
     <!-- Home button -->
     <div class="nav-item col-sm-3 col-md-2 col-xxl-1 d-none d-sm-block">
         <a class="nav-link" href="/index.html">
@@ -16,20 +17,50 @@
         </form>
     </div>
 
-    <div class="nav-item text-right ml-auto col-4 col-sm-3 col-md-3 col-lg-2 col-xxl-2 row">
-        <!-- Login/Profile button -->
-        <div class="virtical-centered-div col-4">
-            <a href="/login">
-                <button type="button" class="btn btn-primary btn-sm">Login</button>
-            </a>
-        </div>
-
-        <!-- Shopping Cart button -->
-        <div class="col-8">
-            <a href="/shopping-cart">
-                <img class="toolbar-icon" alt="Shopping Cart" src="../assets/shopping-cart-icon.svg"
-                    id="shopping-cart-button" />
-            </a>
+    <!-- <div class="nav-item text-right ml-auto col-4 col-sm-3 col-md-3 col-lg-2 col-xxl-2" id="navbar-right"> -->
+    <div class="col-4 col-sm-3 col-md-3 col-lg-2 col-xxl-2" id="navbar-right">
+        <div class="row">
+            <!-- Login/Profile button -->
+            <div class="virtical-centered-div col-4" *ngIf="!isLoggedIn" id="login-div">
+                <a href="/login">
+                    <button type="button" class="btn btn-primary btn-sm">Login</button>
+                </a>
+            </div>
+            <div class="virtical-centered-div col-6 dropdown show" *ngIf="isLoggedIn" id="profile-div">
+                <button mat-button [matMenuTriggerFor]="menu">
+                    <!-- <mat-icon>account_box</mat-icon> -->
+                    Profile
+                </button>
+    
+                <mat-menu #menu="matMenu" xPosition="after" yPosition="below">
+                    <button mat-menu-item>Profile</button>
+                    <button mat-menu-item>Change Password</button>
+                    <button mat-menu-item>Logout</button>
+                </mat-menu>
+            </div>
+    
+            <!-- Shopping Cart button -->
+            <div class="col-6" id="shopping-cart-div">
+                <a href="/shopping-cart">
+                    <img class="toolbar-icon" alt="Shopping Cart" src="../assets/shopping-cart-icon.svg"
+                        id="shopping-cart-button" />
+                </a>
+            </div>
         </div>
     </div>
 </nav>
+
+<!-- <main>
+    <div class="row">
+        <div class="col-4">
+            <h3>hello</h3>
+        </div>
+        <div class="col-6">
+            <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
+        </div>
+    </div>
+</main> -->

@@ -1,5 +1,26 @@
 <div class="container-fluid">
-  <cj-banner></cj-banner>
+  <!-- <cj-banner></cj-banner>
   <ng-content></ng-content>
-  <cj-breakpoints></cj-breakpoints>
+  <cj-breakpoints></cj-breakpoints> -->
+
+  <div class="row">
+    <div class="col-4">
+      <h3>First col</h3>
+    </div>
+    <div class="col-4">
+      <button mat-button [matMenuTriggerFor]="menu">
+        Profile
+      </button>
+      
+      <!-- <mat-menu #aboveMenu="matMenu" #menu="matMenu"> -->
+      <mat-menu #menu="matMenu" xPosition="after" yPosition="below">
+        <button mat-menu-item>Profile</button>
+        <button mat-menu-item>Change Password</button>
+        <button mat-menu-item>Logout</button>
+      </mat-menu>    
+    </div>
+    <div class="col-4">
+      <h3>Last col</h3>
+    </div>
+  </div>
 </div>
